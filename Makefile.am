@@ -5,7 +5,7 @@ nobase_include_HEADERS=stl_ta/functions.h \
 	stl_ta/momentum.h \
 	stl_ta/roc.h \
 	stl_ta/sma.h \
-	stl_ta/subtract 
+	stl_ta/subtract.h
 ACLOCAL_AMFLAGS=-I m4
 lib_LTLIBRARIES=libstlta.la
 libstlta_la_SOURCES=functions.cpp
