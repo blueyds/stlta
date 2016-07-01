@@ -1,10 +1,8 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ([2.69])
-AC_INIT([STL_TA], [0.2], [BUG-REPORT-ADDRESS])
+AC_INIT([STL_TA], [0.0.0], [BUG-REPORT-ADDRESS])
 AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([src/functions.cpp])
-AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile])
  
 # Checks for programs.
