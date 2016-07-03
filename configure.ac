@@ -9,7 +9,6 @@ AC_CONFIG_FILES([Makefile])
 # Checks for programs.
 AC_PROG_CXX
 AC_PROG_CC
-AM_PROG_LIBTOOL
 AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
 
 # Checks for libraries.
