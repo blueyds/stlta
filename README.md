@@ -15,22 +15,13 @@ The LICENSE file contains the license this is released under. Contributions to t
 ## Installation
 Call the following shell code block:
 
-	libtoolize
-	aclocal
-	automake --add-missing --gnu
 	autoconf
 	./configure
 	make
-	make install
 	
-You may have to prefix `make install` with a `sudo` command.
-
 ## Usage
 The library was built with automake tools, and the following instructions apply to using with a program built with the automake tools.
 
-In the Makefile.am add the following line, where prog is the program name variable.
 
-	prog_LDADD=libstlta.la
-	
 
 	
