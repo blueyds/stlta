@@ -10,6 +10,7 @@ AC_CONFIG_FILES([Makefile])
 AC_PROG_CXX
 AC_PROG_CC
 AC_PROG_RANLIB
+AM_PROG_AR
 
 # Checks for libraries.
 
