@@ -9,7 +9,7 @@ AC_CONFIG_FILES([Makefile])
 # Checks for programs.
 AC_PROG_CXX
 AC_PROG_CC
-AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
+AC_PROG_RANLIB
 
 # Checks for libraries.
 
@@ -17,6 +17,7 @@ AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
 
 
 # Checks for typedefs, structures, and compiler characteristics.
+AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
 
 # Checks for library functions.
 
