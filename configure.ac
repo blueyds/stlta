@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ([2.69])
 AC_INIT([STL_TA], [0.0.0], [BUG-REPORT-ADDRESS])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([foreign -Wall _Werror])
 AC_CONFIG_MACRO_DIRS([m4])
 AC_CONFIG_FILES([Makefile])
  
