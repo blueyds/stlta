@@ -41,28 +41,28 @@ void TA::SUBTRACT(TA::dvector &input1, TA::dvector &input2, TA::dvector &output)
 	std::transform(input1.begin(), input1.end(),input2.begin(),output.begin(), _subtract);
 }
 
-void MIN(int window,TA::dvector &input, TA::dvector &output)
+void TA::MIN(int window,TA::dvector &input, TA::dvector &output)
 {
 	TA::functors::MIN<double> _min(window);
 	output.reserve(input.size());
 	std::transform( input.begin(), input.end(), output.begin(), _min);
 }
 
-void MAX(int window,TA::dvector &input, TA::dvector &output)
+void TA::MAX(int window,TA::dvector &input, TA::dvector &output)
 {
 	TA::functors::MAX<double> _max(window);
 	output.reserve(input.size());
 	std::transform( input.begin(), input.end(), output.begin(), _max);
 }
 
-void MOMENTUM(int window,TA::dvector &input,TA::dvector &output)
+void TA::MOMENTUM(int window,TA::dvector &input,TA::dvector &output)
 {
 	TA::functors::MOMENTUM<double> _momentum(window);
 	output.reserve(input.size());
 	std::transform( input.begin(), input.end(), output.begin(), _momentum);
 }
 
-void ROC(int window,TA::dvector &input,TA::dvector &output)
+void TA::ROC(int window,TA::dvector &input,TA::dvector &output)
 {
 	TA::functors::ROC<double> _roc(window);
 	output.reserve(input.size());
