@@ -4,7 +4,9 @@ AC_PREREQ([2.69])
 AC_INIT([STL_TA], [0.0.0], [BUG-REPORT-ADDRESS])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
 AC_CONFIG_MACRO_DIRS([m4])
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile],[STL_TA.pc.in])
+ #add STL_TA.pc.in to config files
+ #add pc to data install in Makefile.am
  
 # Checks for programs.
 AC_PROG_CXX
