@@ -15,10 +15,7 @@ The LICENSE file contains the license this is released under. Contributions to t
 ## Installation
 Call the following shell code block:
 
-	libtoolize
-	aclocal
-	automake --add-missing --gnu
-	autoconf
+	autoreconf --install --force
 	./configure
 	make
 	make install
