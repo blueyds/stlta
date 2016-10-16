@@ -15,9 +15,10 @@ The LICENSE file contains the license this is released under. Contributions to t
 ## Installation
 Call the following shell code block:
 
-	autoconf
+	autoreconf --install --force
 	./configure
 	make
+	sudo make install
 	
 ## Usage
 The library was built with automake tools, and the following instructions apply to using with a program built with the automake tools.
