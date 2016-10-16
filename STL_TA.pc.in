@@ -3,7 +3,8 @@ exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@prefix@/include
 
-Name: STDescription: Technical analysis using Boost and tge STL
+Name: STL_TA
+Description: Technical analysis using Boost and tge STL
 URL: <homepage>
 Version: @VERSION@
 Requires:
