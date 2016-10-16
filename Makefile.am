@@ -3,8 +3,6 @@ ACLOCAL_AMFLAGS=-I m4
 lib_LIBRARIES = libstlta.a
 libstlta_a_SOURCES = functions.cpp include/functions.h
 
-lib_LTLIBRARIES = libstlta.la
-libstlta_la_SOURCES=functions.cpp include/functions.h
  
 pkgconfigdir = /usr/lib/pkgconfig
 pkgconfig_DATA = stlta.pc
