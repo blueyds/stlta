@@ -4,8 +4,6 @@ AC_PREREQ([2.69])
 AC_INIT([STL_TA], [0.0.0], [BUG-REPORT-ADDRESS])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
 AC_CONFIG_MACRO_DIRS([m4])
-AC_CONFIG_FILES([Makefile],
-	[STL_TA.pc])
  
 # Checks for programs.
 AC_PROG_CXX
@@ -22,5 +20,8 @@ AM_PROG_AR
 AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
 
 # Checks for library functions.
+
+AC_CONFIG_FILES([Makefile
+	STL_TA.pc])
 
 AC_OUTPUT
