@@ -20,13 +20,13 @@
 */
 
 #include <vector>
-#include "sma.h"
-#include "ema.h"
-#include "subtract.h"
-#include "max.h"
-#include "min.h"
-#include "momentum.h"
-#include "roc.h"
+#include "stlta/sma.h"
+#include "stlta/ema.h"
+#include "stlta/subtract.h"
+#include "stlta/max.h"
+#include "stlta/min.h"
+#include "stlta/momentum.h"
+#include "stlta/roc.h"
 
 namespace TA
 {
