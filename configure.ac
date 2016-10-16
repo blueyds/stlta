@@ -9,7 +9,6 @@ AC_CONFIG_MACRO_DIRS([m4])
 # Checks for programs.
 AC_PROG_CXX
 AC_PROG_CC
-AC_PROG_RANLIB
 AM_PROG_AR
 
 # Checks for libraries.
