@@ -3,7 +3,7 @@ exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@prefix@/include
 
-Name: STL_TA
+Name: stlta
 Description: Technical analysis using Boost and tge STL
 URL: <homepage>
 Version: @VERSION@
