@@ -9,8 +9,12 @@ Most of the function background was from the following book. There is a big sect
 
 	Elder, Alexander. Trading For a Living: Psychology, Trading Tactics, Money Management. New York: John Wiley & Sons, 1992.
 	
-## 	License
+## License
 The LICENSE file contains the license this is released under. Contributions to the source code are welcomed.
+
+## Prerequisites
+1. STL
+2. C++11
 
 ## Installation
 Call the following shell code block:
@@ -23,6 +27,14 @@ Call the following shell code block:
 ## Usage
 The library was built with automake tools, and the following instructions apply to using with a program built with the automake tools.
 
+### Makefile.am
+In the Makefile.am add the following line, where prog is the program name variable.
+
+	AM_CPPFLAGS = $(TA_CFLAGS)
+	prog_LDADD = $(TA_LIBS)
 
 
-	
+### configure.ac
+In configure.ac add the folowing line
+
+	PKG_CHECK_MODULES(TA,stlta)
