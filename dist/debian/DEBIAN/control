@@ -1,7 +1,7 @@
 Package: stlta
-Version: 0.50-1
+Version: 0.5-1
 Section: base
 Priority: optional
 Architecture: i386
-Maintainer: Craig Nunemaker
+Maintainer: Craig Nunemaker <craig@nunemakerllc.com>
 Description: STL TA is a library for technical analysis
