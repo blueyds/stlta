@@ -18,7 +18,7 @@ LT_INIT
 
 
 # Checks for typedefs, structures, and compiler characteristics.
-AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
+# AX_CXX_COMPILE_STDCXX_11([ext],[mandatory])
 
 # Checks for library functions.
 
