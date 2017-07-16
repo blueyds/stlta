@@ -18,7 +18,7 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
-#include "stlta/functions.h"
+#include "functions.h"
 
 void TA::SMA(int window,TA::dvector &input, TA::dvector &output)
 {
