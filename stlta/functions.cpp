@@ -85,18 +85,3 @@ void TA::MACD(int short_window, int long_window, int smooth_window, TA::dvector 
 	TA::EMA(smooth_window,macd,macd_signal);
 	TA::SUBTRACT(macd,macd_signal,macd_hist);
 }
-
-void TA::TEST()
-{
-	std::vector<double> test= {10.0,15.0,13.0,9.0,16.0,14,0,11.0,10.0,13.0,18.0,20.0};
-	std::vector<double> out_test;
-	std::cout << "test vector \t";
-	for (auto i: test)
-  		std::cout << i << "\t";
-  	std::cout<< "\n";
-	TA::SMA(5,test,out_test);
-	std::cout << "sma test\t";
-	for (auto i: out_test)
-  		std::cout << i << "\t";
-  	std::cout<< "\n";
-}

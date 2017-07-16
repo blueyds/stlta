@@ -39,7 +39,7 @@ void MIN(int window, dvector &input, dvector &output);
 void MAX(int window,dvector &input, dvector &output);
 void MOMENTUM(int window,dvector &input,dvector &output);
 void ROC(int window,dvector &input,dvector &output);
-void TEST();
+
 }//namespace TA
 
 #endif
