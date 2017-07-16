@@ -2,23 +2,30 @@ sudo: required
 dist: trusty
 language: cpp
 compiler:
-  - gcc
+- gcc
 notifications:
   email:
     recipients:
-      - craig@nunemakerllc.com
+    - craig@nunemakerllc.com
     on_success: never
     on_failure: always
 install:
-  - "sudo apt-get -qq update"
-  - "sudo apt-get -y install autoconf-archive"
-  - "sudo apt-get -y install autoconf"
-  - "sudo apt-get -y install autotools-dev"
-  - "sudo apt-get -y install pkg-config"
-  - "autoreconf --install --force"
+- sudo apt-get -qq update
+- sudo apt-get -y install autoconf-archive
+- sudo apt-get -y install autoconf
+- sudo apt-get -y install autotools-dev
+- sudo apt-get -y install pkg-config
+- autoreconf --install --force
 script:
-  - mkdir build
-  - cd build
-  - "../configure"
-  - make
-  - make dist
+- mkdir build
+- cd build
+- "../configure"
+- make
+- make dist
+deploy:
+  provider: releases
+  api_key:
+    secure: fr/l7yEhMjojZET+SwXQEvR5IBWtsVcBhKwO/XD0xjzEMJuyMljqHBrXyRObAebBHGvx0V3FIT5FWCSyrz4ppV2FT33UULuSq9LKjQDNhbr76Ireflq9i1kVSjQX6CyrpqCzqt18anO3Jg4lj6TCJdBButRaU3Uokblr6loq0Ob20Mc7tLWc7pjPJk8H2FHzlBVeKm8VyOjZS/Qj/Uqttoq5jiyIsJX7gXEjfZ4z0ZjBsc5tss1UVervWf2zvZ6bxlmGYhEawDBN0KY05RcoWz9y4CMNo1YbOit19BfaRaSoUsde38js4xUgE8ZbuT1U8OOzJPYomcJC1YTbmg05wBCKqqdD5gOnza4CMKW+JPCbOP2Ok+AwFTx1IW+9zz5nTuwbFGY9nN5axWuYAkGnT95GFfJlzd+f3EKa2Ly5j4uyp1KmZsINCI1I7YrSLFmObdDg6R93duOSp3jx1y94+3M5OTtBxyl34i01l7WNC/ozP1Pp25g1KXd1vcJeeme6baecABro9kosnu14PXUncYDQJp2bSliC4UROyKIa9lpQknw5TQozcvEeSt+t77r4jVxX4ldToBUuH08tD6IBvPa+AZ95uynPDtA8umysdQ59nhXddwzqSY7IEDFYRocq0UVoQJCf0GCZBOoDERraZK4hCjo0qIMk34hRMBm5E44=
+  file: stlta-0.5.tar.gz
+  on:
+    repo: nunemaker73/stlta
