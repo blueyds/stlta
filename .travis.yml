@@ -19,8 +19,9 @@ install:
 script:
 - mkdir build
 - cd build
-- "../configure"
+- "../configure --prefix=../dist/debian"
 - make
+- make install
 - make dist
 deploy:
   provider: releases
