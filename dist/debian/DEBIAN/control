@@ -4,5 +4,4 @@ Section: base
 Priority: optional
 Architecture: i386
 Maintainer: Craig Nunemaker
-Description: STL TA
- stlta is a library
+Description: STL TA is a library for technical analysis
