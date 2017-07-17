@@ -13,7 +13,9 @@ Most of the function background was from the following book. There is a big sect
 The LICENSE file contains the license this is released under. Contributions to the source code are welcomed.
 
 ## Downloads
-See the realeases section for a link to the latest debian package. Debian package is experimental.
+See the realeases section for a link to the latest debian package.Debian package is experimental.
+
+1. Debian - https://github.com/nunemaker73/stlta/releases/download/0.5.1/stlta-0.5.deb
 
 ## Installation
 Call the following shell code block:
