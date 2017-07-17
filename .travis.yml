@@ -26,6 +26,8 @@ script:
 before_deploy:
 - cd $TRAVIS_BUILD_DIR 
 - sudo chown -R root:root dist/debian/
+- ls
+- ls dist/debian/usr
 - dpkg-deb --build dist/debian stlta-0.5.deb 
 deploy:
   provider: releases
