@@ -19,12 +19,13 @@ install:
 script:
 - mkdir build
 - cd build
-- "../configure --prefix=/usr"
+- ../configure
 - make
-- make DESTDIR=$TRAVIS_BUILD_DIR/dist/debian install
-- make dist
 before_deploy:
 - cd $TRAVIS_BUILD_DIR 
+- "./configure --prefix=/usr"
+- "make DESTDIR=$TRAVIS_BUILD_DIR/dist/debian install"
+- make dist
 - sudo chown -R root:root dist/debian/
 - ls
 - ls dist/debian/usr
