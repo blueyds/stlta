@@ -12,9 +12,8 @@ Most of the function background was from the following book. There is a big sect
 ## License
 The LICENSE file contains the license this is released under. Contributions to the source code are welcomed.
 
-## Prerequisites
-1. STL
-2. C++11
+## Downloads
+See the realeases section for a link to the latest debian package. Debian package is experimental.
 
 ## Installation
 Call the following shell code block:
