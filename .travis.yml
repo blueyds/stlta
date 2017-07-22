@@ -29,7 +29,7 @@ before_deploy:
 - "sudo chown -R root:root dist/debian/"
 - ls
 - ls dist/debian/usr
-- "dpkg-deb --build dist/debian stlta-0.5.deb"
+- "dpkg-deb --build dist/debian stlta-0.6-amd64.deb"
 deploy:
   provider: releases
   api_key:
