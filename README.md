@@ -15,7 +15,7 @@ The LICENSE file contains the license this is released under. Contributions to t
 ## Downloads
 See the realeases section for a link to the latest debian package.Debian package is experimental.
 
-1. Debian - https://github.com/nunemaker73/stlta/releases/download/0.5.1/stlta-0.5.deb
+1. Debian - https://github.com/nunemaker73/stlta/releases/download/0.6/stlta-0.6-i386.deb
 
 ## Installation
 Call the following shell code block:

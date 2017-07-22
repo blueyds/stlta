@@ -34,7 +34,7 @@ deploy:
   provider: releases
   api_key:
     secure: B6Cnd4Kl6gaDEam8aWD47lhFGjchqJM5OsIu2rdRfsYJSFHqbtHPodfl3qSAJdnLsgj1/3h8Pzvd1bnt4UgRvgIDD/f4O1kKtMStfCQ7TTrhjbp4Eb9WoDS7XcKWoLpM46GnIF2JJdIWyJJnhpxf+yVwE2WZkpw0uqUZfZ+Ed3PS01ULgVkvsaP5fOGiY5YiSZV8J4MydEX7pVndYpLln8hPqhltFJdBfDWPq7pTRFZSPhM+SvIUAwU0wXOJtcGvSgAc6WTCxeoPJyua9oqQXciXEklOzT+bIVfW7AprzO7TUxGtIA3i23dZioLRlehRg/hYcZ1QupyUjmTSbE9CHmnVYZQHZbuFJPqSljqQ/PrtxTxaXMUl2jXZHDrbLmKAMdSsz2DzoMfjGbnic0h9JJqa3sifEwMPiya2c5sOJqIRy0TVsb/MIrHjg/8kyHlaO+c8f4uqEz+hObyFQcu9T/dD63BPqKldtSuB5YEXMgXXeOTY2XEgbjN8YNb5sX4fPZEQXNO9JXtREowUJiHspPeF63MTWgcrzIj/QjYlcnKwAKi8pRHyjmrfS3GZb0buk6LEklX9eGCRFZz1W40oKK6pOpGaaAlt93ege+1SHlDwSMkm8G+LSQJH5mORnjA0+P3q8+g0BfKCLjGWZkb+y7+A6wOzWQkeUUYWqMdokA8=
-  file: stlta-0.5.deb
+  file: stlta-0.6-amd64.deb
   skip_cleanup: true
   on:
     repo: nunemaker73/stlta

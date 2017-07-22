@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 AC_PREREQ([2.69])
-AC_INIT([stlta], [0.5], [BUG-REPORT-ADDRESS])
+AC_INIT([stlta], [0.6], [BUG-REPORT-ADDRESS])
 AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
 AC_CONFIG_MACRO_DIRS([m4])
