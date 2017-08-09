@@ -21,6 +21,7 @@
 
 #include <vector> //std::vector
 #include <numeric> //std::accumulate
+#include <algorithm> // std::min_element
 
 namespace TA{
 namespace functors{

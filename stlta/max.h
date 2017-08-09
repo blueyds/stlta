@@ -21,6 +21,7 @@
 
 #include <vector> //std::vector
 #include <numeric> //std::accumulate
+#include <algorithm> //std::max_element
 
 
 namespace TA{
