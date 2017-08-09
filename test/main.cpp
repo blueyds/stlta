@@ -1,4 +1,5 @@
 #include "../stlta/functions.h"
+#include "../stlta/functions.hpp"
 // implement boost test
 #define BOOST_TEST_MODULE stlta_test
 #include <boost/test/unit_test.hpp>
@@ -12,6 +13,6 @@ BOOST_AUTO_TEST_MODULE(stlta_test)
 	dvector SMAs10;
 	dvector hSMAs10;
 	SMA(10,closes,SMAs10);
-	hSMA(10,closes,hSMAs10);
+	xSMA(10,closes,hSMAs10);
 	BOOST_CHECK(SMAs10==hSMAs10);
 };

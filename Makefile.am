@@ -19,4 +19,4 @@ nobase_include_HEADERS = stlta/ema.h \
 	
 TESTS = stlta_test
 check_PROGRAMS = stlta_test
-stlta_test_SOURCES = test/main.cpp
+stlta_test_SOURCES = stlta/functions.cpp test/main.cpp
