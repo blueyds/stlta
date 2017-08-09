@@ -1,5 +1,5 @@
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
+#ifndef STLTA_HPP
+#define STLTA_HPP
 
 /*
     STL_TA
@@ -20,6 +20,8 @@
 */
 
 #include <vector>
+#include <algorithm>
+#include "stlta/functions.h"
 #include "stlta/sma.h"
 #include "stlta/ema.h"
 #include "stlta/subtract.h"
@@ -30,7 +32,8 @@
 
 namespace TA
 {
-	typedef std::vector<double> dvector;
+//	typedef std::vector<double> dvector;
+/*
 // non header based definitions. impletemtned in functions.cpp
 	void SMA(int window,dvector &input, dvector &output);
 	void EMA(int window,dvector &input, dvector &output);
@@ -40,7 +43,14 @@ namespace TA
 	void MAX(int window,dvector &input, dvector &output);
 	void MOMENTUM(int window,dvector &input,dvector &output);
 	void ROC(int window,dvector &input,dvector &output);
-  
+*/  
+// header based definitions
+	inline void xSMA(int window, dvector &input, dvector &output)
+    {
+    	TA::functors::SMA<double> _sma(window);
+		output.reserve(input.size());
+		std::transform(input.begin(), input.end(), output.begin(), _sma);
+    }
 }//namespace TA
 
 
