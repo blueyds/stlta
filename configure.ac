@@ -13,7 +13,9 @@ AC_PROG_CC
 AM_PROG_AR
 
 # Checks for libraries.
+AX_BOOST_BASE
 LT_INIT
+
 # Checks for header files.
 
 
