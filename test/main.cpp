@@ -1,5 +1,5 @@
 #include "../stlta/functions.h"
-#include "../stlta/functions.hpp"
+#include "../stlta/stlta.hpp"
 // implement boost test
 #define BOOST_TEST_MODULE stlta_test
 #include <boost/test/unit_test.hpp>
