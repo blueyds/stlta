@@ -1,11 +1,11 @@
 #include "../stlta/functions.h"
 #include "../stlta/stlta.hpp"
 // implement boost test
-#define BOOST_TEST_MODULE stlta_test
+#define BOOST_TEST_MODULE TAtest
 #include <boost/test/unit_test.hpp>
 
 
-BOOST_AUTO_TEST_MODULE(stlta_test)
+BOOST_AUTO_TEST_CASE(TA_test)
 {
 	using std;
 	using TA;
