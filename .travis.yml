@@ -15,6 +15,7 @@ install:
 - "sudo apt-get -y install autoconf"
 - "sudo apt-get -y install autotools-dev"
 - "sudo apt-get -y install pkg-config"
+- "sudo apt-get install libboost-all-dev"
 - "autoreconf --install --force"
 script:
 - mkdir build
