@@ -2,7 +2,7 @@
 #include "../stlta/stlta.hpp"
 // implement boost test
 #define BOOST_TEST_MODULE TAtest
-#include <boost/test/unit_test.hpp>
+#include <boost/test/included/unit_test.hpp>
 
 
 BOOST_AUTO_TEST_CASE(TA_test)
