@@ -4,11 +4,8 @@
 #define BOOST_TEST_MODULE TAtest
 #include <boost/test/included/unit_test.hpp>
 
-
-BOOST_AUTO_TEST_CASE(TA_test)
+void setup_closes(TA::dvector &closes)
 {
-	TA::dvector closes; 
-	
 	closes.push_back(10.0);
 	closes.push_back(11.0);
 	closes.push_back(12.0);
@@ -43,42 +40,62 @@ BOOST_AUTO_TEST_CASE(TA_test)
 	closes.push_back(20.5);
 	closes.push_back(18.0);
 	closes.push_back(19.0);
-	{
+}
+
+BOOST_AUTO_TEST_CASE(sma_test)
+{
+	TA::dvector closes; 
+	setup_closes(closes);
 	TA::dvector SMAs10;
 	hTA::dvector hSMAs10;
 	TA::SMA(10,closes,SMAs10);
 	hTA::SMA(10,closes,hSMAs10);
 	BOOST_CHECK(SMAs10==hSMAs10);
-	}
-	{
+}
+BOOST_AUTO_TEST_CASE(ema_test)
+{
+	TA::dvector closes; 
+	setup_closes(closes);
 	TA::dvector EMAs10;
 	hTA::dvector hEMAs10;
 	TA::EMA(10,closes,EMAs10);
 	hTA::EMA(10,closes,hEMAs10);
 	BOOST_CHECK(EMAs10==hEMAs10);
-	}
-	{
+}
+BOOST_AUTO_TEST_CASE(min_test)
+{
+	TA::dvector closes; 
+	setup_closes(closes);
 	TA::dvector MINs10;
 	hTA::dvector hMINs10;
 	TA::MIN(10,closes,MINs10);
 	hTA::MIN(10,closes,hMINs10);
 	BOOST_CHECK(MINs10==hMINs10);
-	}
-	{
+}
+BOOST_AUTO_TEST_CASE(max_test)
+{
+	TA::dvector closes; 
+	setup_closes(closes);
 	TA::dvector MAXs10;
 	hTA::dvector hMAXs10;
 	TA::MAX(10,closes,MAXs10);
 	hTA::MAX(10,closes,hMAXs10);
 	BOOST_CHECK(MAXs10==hMAXs10);
-	}
-	{
+}
+BOOST_AUTO_TEST_CASE(roc_test)
+{
+	TA::dvector closes; 
+	setup_closes(closes);
 	TA::dvector ROCs10;
 	hTA::dvector hROCs10;
 	TA::ROC(10,closes,ROCs10);
 	hTA::ROC(10,closes,hROCs10);
 	BOOST_CHECK(ROCs10==hROCs10);
-	}
-	{
+}
+BOOST_AUTO_TEST_CASE(macd_test)
+{
+	TA::dvector closes; 
+	setup_closes(closes);
 	TA::dvector MACDs;
 	TA::dvector signals;
 	TA::dvector hists;
@@ -90,5 +107,4 @@ BOOST_AUTO_TEST_CASE(TA_test)
 	BOOST_CHECK(MACDs==hMACDs);
 	BOOST_CHECK(signals==hsignals);
 	BOOST_CHECK(hists==hhists);
-	}
-};
+}
