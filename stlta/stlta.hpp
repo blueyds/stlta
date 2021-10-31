@@ -23,7 +23,7 @@
 #include <algorithm>
 #include <numeric>
 
-namespace hTA
+namespace TA
 {
 typedef std::vector<double> dvector;
  
